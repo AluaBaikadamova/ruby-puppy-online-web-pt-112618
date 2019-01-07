@@ -9,7 +9,9 @@ class Dog
   end
   
    def self.all
-    @@all
+    each @@all do |v|
+      puts v
+    end
   end
   
    def self.clear_all
